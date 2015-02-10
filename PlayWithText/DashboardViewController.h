@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface DashboardViewController : UIViewController
+@interface DashboardViewController : UIViewController <AVSpeechSynthesizerDelegate>
+
+
+@property(strong,nonatomic)AVSpeechSynthesizer *synthesizer;
+
 
 @end
